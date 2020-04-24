@@ -1,0 +1,521 @@
+feature;length;width;thickness;weight;type;cortex;burned;mod
+15;17;16;5;1,6;blade;no cortex;unburned;mod
+30;33;12;3;1,2;blade;no cortex;unburned;unmod
+85;23;20;5;2;blade;no cortex;unburned;unmod
+97;44;29;9;15,7;flake;cortex;unburned;unmod
+97;48;35;14;21,9;flake;cortex;unburned;unmod
+112;34;31;6;5,1;flake;no cortex;unburned;unmod
+112;51;40;12;18,4;flake;no cortex;unburned;unmod
+115;39;25;8;7,9;flake;no cortex;unburned;mod
+121;25;15;4;1,5;blade;no cortex;unburned;unmod
+134;37;17;4;2,7;flake;cortex;unburned;unmod
+135;25;20;6;2,7;flake;no cortex;unburned;unmod
+145;24;21;3;2;blade;no cortex;unburned;unmod
+145;29;17;6;3,3;flake;cortex;unburned;unmod
+159;21;11;8;1,7;other;no cortex;unburned;unmod
+211;18;14;3;1,1;blade;no cortex;unburned;mod
+219;19;15;5;1;blade;no cortex;burned;unmod
+228;24;17;6;2,2;flake;no cortex;burned;unmod
+248;38;33;16;24,4;flake;cortex;unburned;mod
+250;20;15;3;0,8;blade;no cortex;unburned;unmod
+251;28;14;3;1,4;blade;cortex;unburned;unmod
+252;23;18;5;2,9;blade;no cortex;burned;unmod
+253;26;23;4;2,3;blade;no cortex;burned;unmod
+253;23;22;5;2,9;blade;no cortex;burned;unmod
+254;24;20;6;2,6;flake;no cortex;unburned;unmod
+282;14;12;3;0,3;flake;cortex;unburned;unmod
+285;57;44;36;117,4;other;cortex;burned;unmod
+285;48;15;6;4,5;blade;no cortex;unburned;mod
+285;26;20;5;2,4;flake;no cortex;NA;unmod
+285;54;27;17;27,1;flake;cortex;unburned;unmod
+288;44;35;12;17,1;flake;no cortex;unburned;mod
+340;38;27;5;8;blade;no cortex;unburned;mod
+340;43;35;23;41;other;cortex;unburned;unmod
+340;29;22;9;3,8;blade;cortex;unburned;unmod
+348;31;29;8;6,9;flake;no cortex;unburned;unmod
+348;19;14;2;0,5;flake;no cortex;unburned;unmod
+348;19;13;6;0,9;flake;no cortex;burned;unmod
+348;29;19;3;1,3;flake;no cortex;unburned;mod
+353;17;16;7;1,7;flake;no cortex;burned;unmod
+384;27;21;5;2,7;blade;no cortex;unburned;unmod
+453;18;15;4;1,1;blade;no cortex;burned;unmod
+463;17;13;2;0,5;other;no cortex;burned;unmod
+463;10;7;2;0,2;other;no cortex;burned;unmod
+463;16;10;2;0,3;other;no cortex;burned;unmod
+463;26;25;5;2;flake;cortex;burned;unmod
+463;31;10;7;1,6;flake;cortex;burned;unmod
+463;33;26;7;4,2;flake;cortex;burned;unmod
+463;21;20;4;1,8;flake;cortex;burned;unmod
+463;21;16;5;1,5;flake;no cortex;unburned;unmod
+463;34;14;3;1,9;blade;no cortex;unburned;unmod
+464;56;34;17;33,7;flake;cortex;unburned;unmod
+494;37;24;10;8;other;no cortex;burned;unmod
+494;12;9;5;0,6;other;cortex;unburned;unmod
+495;30;16;4;1,4;flake;no cortex;unburned;mod
+496;74;21;8;11,1;blade;no cortex;unburned;mod
+505;28;12;3;1,2;flake;no cortex;unburned;mod
+512;24;18;3;0,9;flake;no cortex;unburned;unmod
+512;18;18;2;0,7;flake;cortex;unburned;unmod
+524;33;20;6;3,4;flake;no cortex;unburned;unmod
+530;22;16;5;2,1;flake;cortex;unburned;unmod
+587;30;28;9;8,9;flake;no cortex;unburned;unmod
+600;21;12;5;1,2;flake;no cortex;unburned;unmod
+676;12;9;1;0,2;flake;no cortex;unburned;unmod
+708;18;13;3;0,8;blade;no cortex;unburned;mod
+708;26;15;4;1,3;flake;cortex;unburned;mod
+708;22;17;3;0,9;flake;no cortex;unburned;mod
+708;33;16;3;1,4;blade;no cortex;unburned;mod
+708;32;18;4;1,8;flake;no cortex;unburned;mod
+708;22;16;3;0,8;flake;no cortex;unburned;mod
+708;22;17;3;1,2;flake;no cortex;unburned;mod
+708;17;15;3;0,7;flake;no cortex;unburned;mod
+716;NA;NA;NA;NA;flake;NA;NA;mod
+716;31;18;4;1,6;blade;no cortex;unburned;mod
+821;22;19;4;1,9;blade;no cortex;unburned;unmod
+924;39;28;11;11,7;other;no cortex;unburned;unmod
+1041;21;14;11;2,4;other;cortex;burned;unmod
+1041;26;22;5;2,7;flake;no cortex;unburned;unmod
+1084;20;18;5;1,5;blade;no cortex;unburned;unmod
+1096;53;31;13;24,5;flake;cortex;unburned;unmod
+1146;28;20;5;3,5;blade;no cortex;burned;unmod
+1146;46;39;11;17,2;flake;no cortex;unburned;mod
+1180;53;40;9;14,5;flake;no cortex;unburned;unmod
+1180;67;26;18;23,1;flake;cortex;unburned;unmod
+1180;38;19;5;4;blade;no cortex;unburned;unmod
+1185;34;17;11;6,1;flake;no cortex;unburned;unmod
+1199;39;20;9;5,9;flake;no cortex;unburned;unmod
+1199;40;11;8;3,3;blade;no cortex;unburned;mod
+1199;21;14;5;1,5;blade;no cortex;unburned;mod
+1199;39;29;7;7,6;blade;no cortex;unburned;mod
+1199;27;18;6;2,7;flake;cortex;unburned;unmod
+1199;27;13;3;0,9;blade;no cortex;unburned;mod
+1225;18;17;4;0,9;flake;no cortex;unburned;unmod
+1233;35;27;9;10,6;blade;no cortex;unburned;unmod
+1233;34;23;5;5,9;blade;no cortex;unburned;mod
+1233;24;16;4;1,9;blade;cortex;unburned;mod
+1236;32;29;8;7;flake;no cortex;unburned;mod
+1253;82;53;45;284;other;no cortex;unburned;mod
+1254;30;22;6;3,9;blade;no cortex;unburned;mod
+1268;42;29;10;12,4;flake;cortex;unburned;mod
+1295;31;17;6;3,5;flake;cortex;unburned;unmod
+1295;22;20;6;3;flake;no cortex;unburned;mod
+1296;20;18;4;1,6;flake;no cortex;unburned;unmod
+1308;18;14;3;1;blade;no cortex;unburned;unmod
+1308;71;49;40;150,2;other;no cortex;unburned;unmod
+1311;24;15;3;1,3;flake;no cortex;unburned;unmod
+1311;10;8;4;0,4;other;no cortex;unburned;unmod
+1311;20;11;5;0,8;flake;no cortex;unburned;unmod
+1316;41;27;8;9,1;flake;no cortex;unburned;unmod
+1316;15;13;3;0,6;flake;no cortex;burned;unmod
+1317;44;27;10;10,7;blade;cortex;unburned;mod
+1317;34;18;6;3,8;blade;no cortex;unburned;mod
+1317;39;31;9;13,3;flake;cortex;unburned;mod
+1317;34;25;7;5,6;flake;no cortex;unburned;unmod
+1317;37;22;7;5;flake;cortex;unburned;unmod
+1317;22;14;3;1;flake;cortex;unburned;unmod
+1317;15;12;3;0,4;flake;cortex;unburned;unmod
+1317;32;27;10;8,1;flake;no cortex;unburned;unmod
+1317;26;23;5;2,7;flake;no cortex;unburned;unmod
+1317;23;20;8;3;flake;no cortex;unburned;unmod
+1317;43;37;24;41,6;other;no cortex;unburned;unmod
+1317;29;23;6;4,1;flake;no cortex;unburned;unmod
+1317;30;22;8;4,8;blade;no cortex;unburned;unmod
+1317;20;14;6;0,9;flake;cortex;unburned;unmod
+1317;24;17;4;1,3;flake;no cortex;unburned;unmod
+1317;13;13;2;0,2;flake;no cortex;unburned;unmod
+1317;35;25;6;4,4;flake;no cortex;unburned;unmod
+1317;28;16;7;3,7;flake;cortex;unburned;unmod
+1335;21;20;8;2,1;flake;no cortex;burned;unmod
+1335;23;18;5;2,6;blade;cortex;unburned;unmod
+1335;17;12;5;0,8;flake;no cortex;burned;unmod
+1335;28;18;5;3,3;blade;no cortex;unburned;mod
+1335;20;18;7;3;flake;no cortex;unburned;unmod
+1335;44;26;8;10;blade;no cortex;unburned;mod
+1340;19;16;3;1,1;blade;no cortex;unburned;unmod
+1368;42;28;6;5,5;flake;no cortex;unburned;unmod
+1368;14;14;7;1,7;other;cortex;unburned;unmod
+1368;37;27;8;7,9;flake;no cortex;unburned;unmod
+1368;24;17;4;1,7;blade;no cortex;unburned;unmod
+1368;24;16;4;2;blade;cortex;unburned;unmod
+1409;71;25;6;9;blade;no cortex;burned;mod
+1431;28;20;7;4,1;flake;no cortex;unburned;unmod
+1431;20;9;6;1,2;flake;cortex;unburned;unmod
+1451;44;25;6;5,5;blade;no cortex;unburned;unmod
+1530;26;21;7;4,1;blade;no cortex;unburned;unmod
+1599;25;18;7;3,5;blade;no cortex;unburned;mod
+1599;28;22;4;3;blade;no cortex;unburned;mod
+1599;30;23;11;6;other;no cortex;burned;unmod
+1668;26;17;5;2,9;blade;no cortex;unburned;unmod
+1668;59;51;27;54;flake;cortex;unburned;mod
+1720;22;13;6;1,2;flake;no cortex;unburned;unmod
+1730;29;17;8;3,6;blade;no cortex;unburned;unmod
+1731;28;24;6;4,2;flake;no cortex;unburned;mod
+1731;27;18;8;2,9;flake;no cortex;burned;unmod
+1731;13;10;5;0,4;flake;cortex;burned;unmod
+1739;35;27;6;4,8;flake;no cortex;unburned;mod
+1774;39;30;10;11,1;flake;no cortex;unburned;mod
+1801;40;18;6;4,5;blade;no cortex;unburned;mod
+1801;38;35;15;15,9;flake;cortex;unburned;unmod
+1801;55;24;19;19,3;flake;no cortex;unburned;unmod
+1801;36;22;6;5,6;blade;cortex;unburned;unmod
+1801;45;28;26;39;other;no cortex;unburned;mod
+1858;53;34;15;29;flake;cortex;unburned;unmod
+1871;28;24;6;4,5;flake;no cortex;unburned;unmod
+1907;25;18;6;2,8;blade;no cortex;burned;mod
+1907;42;11;7;3,2;blade;cortex;unburned;unmod
+1907;30;21;6;3,7;flake;no cortex;unburned;unmod
+1907;47;31;8;16;blade;no cortex;unburned;unmod
+1907;30;27;6;4,8;blade;no cortex;unburned;unmod
+1907;27;23;3;1,8;other;no cortex;unburned;unmod
+1907;25;13;6;2,2;flake;cortex;unburned;unmod
+1907;23;22;9;4,1;flake;cortex;unburned;unmod
+1907;22;20;6;3,3;blade;cortex;unburned;mod
+1907;47;28;7;6,9;flake;cortex;unburned;unmod
+1907;37;20;9;6,4;flake;cortex;unburned;unmod
+1907;34;27;5;4,3;blade;no cortex;burned;unmod
+1907;28;22;6;4,2;blade;no cortex;unburned;mod
+1907;20;19;6;2,8;blade;no cortex;unburned;mod
+1962;41;17;4;2,7;blade;cortex;unburned;unmod
+1967;24;20;8;3,9;flake;no cortex;burned;unmod
+1967;28;17;8;4,3;flake;no cortex;unburned;unmod
+1967;40;19;5;4,3;blade;no cortex;unburned;mod
+1967;22;14;4;1,1;blade;no cortex;burned;mod
+1967;36;28;10;11,1;flake;no cortex;burned;mod
+1967;12;10;5;0,4;other;no cortex;burned;unmod
+1967;9;8;3;0,2;other;no cortex;burned;unmod
+1967;28;23;5;3,1;blade;no cortex;unburned;mod
+1967;50;30;6;8,7;blade;no cortex;unburned;unmod
+1976;66;13;7;6,6;blade;no cortex;unburned;mod
+1978;44;16;6;5,7;blade;no cortex;unburned;mod
+2001;35;30;9;5,2;flake;cortex;unburned;unmod
+2001;52;26;6;10,1;blade;cortex;unburned;mod
+2001;39;19;4;3,6;blade;no cortex;unburned;mod
+2001;33;26;7;5,1;blade;no cortex;burned;mod
+2001;21;17;5;2,2;blade;no cortex;unburned;mod
+2001;23;21;7;2,2;flake;no cortex;burned;unmod
+2001;19;15;5;2,3;flake;no cortex;burned;unmod
+2004;34;26;10;10;other;cortex;unburned;unmod
+2013;32;26;7;4,3;blade;cortex;unburned;unmod
+2033;35;27;12;9,7;other;no cortex;unburned;unmod
+2079;14;14;2;0,6;flake;no cortex;unburned;unmod
+2099;55;41;17;40,9;other;no cortex;unburned;mod
+2118;32;20;7;4,6;flake;cortex;unburned;unmod
+2180;31;28;9;7,3;flake;no cortex;burned;unmod
+2180;36;17;6;2,6;flake;no cortex;unburned;unmod
+2180;20;17;3;1,3;blade;no cortex;unburned;mod
+2180;45;18;5;4;blade;no cortex;unburned;mod
+2180;22;14;4;1,1;blade;no cortex;unburned;unmod
+2180;36;27;10;8;flake;no cortex;burned;unmod
+2181;17;12;5;1,2;blade;no cortex;unburned;mod
+2194;35;24;5;3,4;flake;no cortex;unburned;unmod
+2225;42;20;18;15,1;flake;no cortex;unburned;mod
+2225;14;10;4;0,8;blade;no cortex;burned;unmod
+2225;18;15;4;1,2;blade;no cortex;unburned;unmod
+2225;31;22;6;4,8;blade;no cortex;unburned;mod
+2347;25;21;5;2,4;blade;no cortex;unburned;unmod
+2347;23;22;4;2,3;flake;cortex;unburned;mod
+2350;32;25;10;6,1;flake;no cortex;NA;unmod
+2350;24;15;3;1,4;flake;no cortex;burned;unmod
+2412;17;15;4;0,7;blade;no cortex;burned;unmod
+2412;21;19;4;1,4;blade;no cortex;unburned;unmod
+2412;18;17;4;1,1;blade;no cortex;unburned;unmod
+2412;18;13;6;1;flake;no cortex;unburned;unmod
+2435;32;21;5;3;flake;cortex;unburned;unmod
+2435;29;17;6;2,4;flake;no cortex;unburned;unmod
+2437;33;21;9;6,1;flake;cortex;unburned;unmod
+2465;32;19;4;2,5;flake;no cortex;unburned;unmod
+2465;35;25;9;8,4;other;cortex;unburned;mod
+2469;41;25;10;11,4;blade;no cortex;unburned;unmod
+2493;46;40;10;18,1;flake;no cortex;unburned;mod
+2559;34;20;6;3,4;flake;no cortex;unburned;unmod
+2569;41;36;12;20,4;flake;no cortex;unburned;mod
+2569;27;24;6;4,2;flake;no cortex;unburned;unmod
+2569;20;15;4;1,4;blade;no cortex;unburned;unmod
+2569;40;20;10;5,2;flake;no cortex;unburned;unmod
+2569;36;30;16;15,4;flake;cortex;unburned;unmod
+2569;48;46;39;107,9;other;no cortex;unburned;mod
+2575;15;9;2;0,2;flake;no cortex;unburned;unmod
+2588;32;18;10;4,5;flake;cortex;unburned;unmod
+2600;45;39;8;9,6;flake;no cortex;unburned;unmod
+2600;27;20;7;3,3;flake;no cortex;unburned;unmod
+2600;60;58;57;293,3;other;cortex;unburned;mod
+2600;25;14;9;2,4;flake;no cortex;burned;unmod
+2600;46;27;13;16,3;flake;cortex;unburned;unmod
+2600;19;17;6;1,6;flake;cortex;unburned;unmod
+2600;39;33;9;10,3;flake;cortex;unburned;mod
+2600;39;33;10;10,2;flake;cortex;unburned;mod
+2600;30;20;5;3,1;blade;no cortex;unburned;mod
+2600;21;17;8;2,6;blade;no cortex;unburned;mod
+2600;40;27;7;4,9;blade;no cortex;unburned;unmod
+2600;14;12;4;0,6;other;no cortex;burned;unmod
+2600;15;10;4;0,4;other;no cortex;burned;unmod
+2600;9;6;6;0,2;other;no cortex;burned;unmod
+2600;66;35;25;52,7;other;no cortex;unburned;unmod
+2615;47;34;19;32;other;cortex;unburned;mod
+2617;54;43;27;59,7;flake;no cortex;unburned;unmod
+2652;38;26;9;11,1;flake;no cortex;unburned;mod
+2652;40;22;5;4,1;blade;no cortex;unburned;mod
+2704;29;27;7;5,2;flake;cortex;unburned;mod
+2704;21;19;6;2;flake;no cortex;unburned;unmod
+2716;18;17;6;2;blade;no cortex;unburned;unmod
+2724;46;38;14;20,1;flake;cortex;unburned;unmod
+2724;24;21;9;4,7;flake;cortex;unburned;mod
+2724;22;10;5;1,3;blade;no cortex;unburned;unmod
+2745;17;17;5;1,7;blade;no cortex;unburned;mod
+2881;31;28;7;7,3;blade;no cortex;unburned;unmod
+2926;14;13;4;0,8;blade;no cortex;unburned;unmod
+2926;24;14;2;0,7;flake;no cortex;unburned;unmod
+2926;32;13;5;2,5;blade;no cortex;unburned;unmod
+2926;31;23;8;5,4;flake;cortex;unburned;unmod
+2926;29;21;6;3,9;blade;no cortex;unburned;mod
+3053;20;17;3;1,7;blade;no cortex;unburned;unmod
+3143;22;15;4;1,4;flake;no cortex;unburned;unmod
+3290;30;20;6;4;blade;no cortex;unburned;unmod
+3296;69;22;8;11;blade;no cortex;unburned;mod
+3296;41;20;5;3,6;flake;no cortex;unburned;unmod
+3296;39;18;6;3,6;flake;cortex;unburned;unmod
+3296;13;9;3;0,3;blade;no cortex;unburned;unmod
+3338;56;23;10;9,2;blade;cortex;unburned;unmod
+3359;16;15;10;1,7;other;cortex;unburned;unmod
+3359;21;16;1;0,4;flake;no cortex;unburned;unmod
+3359;16;13;1;0,3;flake;cortex;unburned;unmod
+3359;24;20;4;1,7;flake;no cortex;unburned;unmod
+3359;21;16;3;0,8;flake;no cortex;unburned;unmod
+3359;18;14;4;0,8;flake;cortex;burned;unmod
+3360;16;14;3;0,7;blade;no cortex;unburned;unmod
+3364;12;9;5;0,4;flake;no cortex;unburned;unmod
+3365;18;12;3;0,6;blade;no cortex;unburned;unmod
+3365;18;14;5;0,7;flake;cortex;unburned;unmod
+3365;25;22;9;3,4;flake;cortex;unburned;unmod
+3365;32;24;10;5,3;other;cortex;unburned;unmod
+3370;31;23;13;6,1;flake;no cortex;unburned;unmod
+3370;20;15;4;0,8;flake;no cortex;unburned;unmod
+3370;19;10;2;0,3;flake;no cortex;unburned;unmod
+3370;19;12;5;1;flake;no cortex;unburned;unmod
+3370;11;6;2;0,1;flake;cortex;unburned;unmod
+3370;15;10;2;0,2;flake;no cortex;unburned;unmod
+3370;16;13;3;0,6;flake;no cortex;unburned;unmod
+3370;13;10;2;0,2;blade;no cortex;unburned;unmod
+3370;18;17;3;0,9;flake;no cortex;unburned;unmod
+3370;27;12;8;2,3;flake;cortex;unburned;unmod
+3370;18;14;3;0,7;flake;cortex;unburned;unmod
+3370;16;10;3;0,6;flake;cortex;unburned;unmod
+3370;20;11;2;0,3;flake;cortex;unburned;unmod
+3370;15;10;2;0,2;flake;no cortex;unburned;unmod
+3370;12;9;2;0,2;flake;cortex;unburned;unmod
+3370;11;10;1;0,2;flake;cortex;unburned;unmod
+3370;15;13;3;0,5;flake;no cortex;burned;unmod
+3370;22;16;5;1,2;flake;cortex;burned;unmod
+3371;40;32;9;9,5;flake;cortex;unburned;unmod
+3372;13;9;2;0,3;flake;cortex;unburned;unmod
+3372;17;13;2;0,4;flake;no cortex;unburned;mod
+3372;17;17;3;0,9;flake;no cortex;unburned;unmod
+3372;23;16;3;1;flake;no cortex;unburned;mod
+3372;25;14;3;1;blade;no cortex;unburned;mod
+3375;19;15;5;1;flake;cortex;burned;unmod
+3376;30;25;6;3,7;flake;cortex;unburned;unmod
+3376;15;13;3;0,6;blade;no cortex;unburned;unmod
+3376;20;19;4;1,7;flake;no cortex;unburned;unmod
+3376;29;15;2;0,9;flake;no cortex;unburned;unmod
+3376;27;17;3;1,9;blade;cortex;unburned;unmod
+3377;38;23;5;3;flake;no cortex;unburned;unmod
+3377;17;14;4;0,9;flake;cortex;unburned;unmod
+3377;19;13;2;0,7;blade;cortex;unburned;mod
+3377;14;11;2;0,5;blade;no cortex;unburned;unmod
+3385;35;27;8;6,1;flake;cortex;unburned;unmod
+3407;21;15;3;0,9;flake;no cortex;unburned;mod
+3409;28;14;5;1;blade;cortex;unburned;unmod
+3421;26;18;4;1,5;blade;no cortex;unburned;mod
+3423;26;24;9;5,1;flake;cortex;unburned;mod
+3430;32;16;4;1,4;blade;no cortex;unburned;mod
+3521;41;30;11;12,2;flake;cortex;unburned;unmod
+3521;30;16;5;2;flake;no cortex;unburned;unmod
+3521;23;9;6;0,8;flake;no cortex;unburned;unmod
+3521;47;36;15;23;flake;cortex;unburned;mod
+3521;42;18;5;3,5;blade;cortex;unburned;unmod
+3521;31;23;6;5,2;blade;no cortex;unburned;mod
+3521;15;10;6;0,8;flake;no cortex;unburned;unmod
+3526;40;32;17;15,4;flake;no cortex;unburned;unmod
+3526;25;18;8;3,7;blade;no cortex;unburned;mod
+3526;52;35;12;21,4;flake;cortex;unburned;unmod
+3526;34;18;9;3,7;flake;no cortex;unburned;unmod
+3526;12;10;3;0,3;flake;no cortex;unburned;unmod
+3536;20;18;6;1,9;flake;no cortex;unburned;unmod
+3536;46;26;8;7,4;flake;cortex;unburned;unmod
+3567;29;20;8;3,3;blade;cortex;unburned;unmod
+3567;25;20;3;1,5;flake;no cortex;unburned;unmod
+3567;21;20;7;3;blade;no cortex;unburned;unmod
+3567;26;13;3;1,1;blade;no cortex;unburned;mod
+3567;17;11;3;0,6;flake;no cortex;unburned;unmod
+3567;30;15;5;2,2;flake;no cortex;unburned;mod
+3567;23;16;5;1,6;flake;no cortex;unburned;unmod
+3567;15;12;6;0,5;other;no cortex;unburned;unmod
+3567;16;9;3;0,5;flake;no cortex;unburned;unmod
+3567;10;8;4;0,4;flake;no cortex;unburned;unmod
+3567;20;15;4;0,9;flake;cortex;unburned;unmod
+3567;22;11;6;1;flake;cortex;unburned;unmod
+3579;27;24;9;5,8;flake;cortex;unburned;unmod
+3616;14;14;7;1,3;flake;cortex;unburned;mod
+3653;46;24;20;16,9;other;cortex;unburned;mod
+3653;38;26;23;13,2;other;cortex;burned;unmod
+3669;48;20;5;4,3;blade;no cortex;unburned;unmod
+3669;23;13;2;0,6;flake;no cortex;unburned;unmod
+3669;26;14;5;1,5;flake;cortex;unburned;unmod
+3687;23;14;2;0,6;flake;no cortex;unburned;mod
+3907;16;15;3;1,1;blade;no cortex;unburned;unmod
+3940;72;62;27;105,9;flake;cortex;unburned;unmod
+3941;20;14;3;0,8;flake;cortex;unburned;mod
+3941;NA;NA;NA;NA;other;NA;NA;mod
+3942;11;9;4;0,4;other;cortex;unburned;unmod
+3983;21;16;9;2,2;flake;no cortex;burned;unmod
+4002;38;32;6;4,5;flake;cortex;unburned;unmod
+4006;30;18;4;1,3;blade;no cortex;unburned;mod
+4006;37;21;5;3,4;blade;no cortex;unburned;mod
+4006;30;19;4;1,9;flake;no cortex;unburned;mod
+4219;28;18;6;3,6;blade;no cortex;unburned;unmod
+4219;18;14;4;1,2;blade;no cortex;unburned;unmod
+4219;18;10;3;0,7;flake;cortex;unburned;unmod
+4219;14;10;3;0,4;flake;no cortex;unburned;unmod
+4219;20;17;6;1,8;blade;no cortex;NA;unmod
+4219;21;14;4;0,7;flake;no cortex;burned;mod
+4219;28;15;4;1,7;other;no cortex;unburned;unmod
+4219;35;14;5;1,5;other;no cortex;unburned;unmod
+4219;20;14;5;1,5;flake;no cortex;unburned;mod
+4219;30;22;6;5,1;blade;no cortex;unburned;mod
+4219;12;7;3;0,2;other;no cortex;burned;unmod
+4219;13;6;2;0,2;flake;no cortex;unburned;unmod
+4221;24;19;6;2,5;blade;no cortex;NA;unmod
+4221;16;12;4;0,5;flake;no cortex;unburned;unmod
+4221;24;19;6;2,5;flake;no cortex;unburned;unmod
+4221;15;14;3;0,7;other;no cortex;unburned;unmod
+4222;29;20;20;12,9;other;no cortex;unburned;unmod
+4222;23;20;6;3;blade;cortex;unburned;unmod
+4225;30;13;6;2,6;blade;no cortex;unburned;mod
+4225;21;20;6;2,8;blade;no cortex;burned;unmod
+4658;42;20;5;6,2;blade;no cortex;unburned;mod
+4658;32;28;11;8,6;flake;no cortex;unburned;unmod
+4658;38;32;12;9,7;flake;cortex;unburned;unmod
+4658;33;27;6;5,5;flake;cortex;unburned;unmod
+4658;25;20;8;3,9;flake;no cortex;unburned;unmod
+4658;32;23;5;2,8;flake;no cortex;unburned;unmod
+4658;25;14;8;2,6;other;no cortex;unburned;unmod
+4658;22;15;3;1,2;flake;cortex;unburned;unmod
+4658;18;16;3;0,9;flake;no cortex;unburned;unmod
+4658;21;11;5;1,1;other;no cortex;unburned;unmod
+4658;24;23;10;7,7;flake;cortex;unburned;mod
+4658;36;23;8;5,7;flake;cortex;unburned;unmod
+4658;22;18;2;1,6;blade;no cortex;unburned;unmod
+4658;38;22;7;4,5;flake;no cortex;unburned;mod
+4658;34;20;8;5,5;flake;no cortex;unburned;mod
+4658;18;15;5;0,9;flake;no cortex;unburned;unmod
+4658;18;16;2;0,5;flake;no cortex;unburned;unmod
+4658;29;24;10;4,9;flake;cortex;unburned;unmod
+4658;29;27;11;8,2;flake;no cortex;unburned;unmod
+4658;28;27;16;14,9;other;no cortex;unburned;mod
+4658;24;14;5;1,1;flake;no cortex;unburned;unmod
+4658;20;16;4;1,6;flake;no cortex;unburned;unmod
+4658;20;11;6;0,8;flake;no cortex;burned;unmod
+4740;16;13;5;1;flake;no cortex;unburned;unmod
+4740;34;22;18;9,9;other;cortex;unburned;unmod
+4740;44;16;8;5,8;blade;no cortex;unburned;unmod
+4740;48;14;5;3,6;blade;no cortex;unburned;unmod
+4740;18;15;4;1;blade;no cortex;unburned;unmod
+4740;16;11;7;1,4;other;cortex;unburned;unmod
+4740;25;21;7;3,5;flake;no cortex;unburned;unmod
+4740;21;18;5;1,7;flake;no cortex;unburned;unmod
+4740;44;42;41;103,6;other;cortex;unburned;mod
+4740;50;40;32;93,8;other;cortex;unburned;mod
+4740;43;31;8;8,9;flake;no cortex;unburned;unmod
+4747;42;22;11;10,2;other;no cortex;unburned;unmod
+4747;40;22;6;5,5;blade;no cortex;unburned;unmod
+4773;21;13;2;0,9;flake;no cortex;unburned;unmod
+4773;24;17;6;2,5;flake;cortex;unburned;unmod
+4773;23;19;10;4;other;cortex;unburned;unmod
+4773;33;28;7;4,3;flake;cortex;unburned;unmod
+4773;16;11;5;1;blade;no cortex;unburned;unmod
+4773;35;25;7;6,5;blade;no cortex;unburned;mod
+4773;27;17;6;3,1;blade;no cortex;burned;mod
+4775;24;20;6;3,1;blade;no cortex;unburned;unmod
+4828;38;28;8;7,5;flake;no cortex;unburned;unmod
+4829;26;19;4;2,6;blade;no cortex;burned;unmod
+4830;32;15;5;2,3;blade;no cortex;unburned;unmod
+4878;25;17;4;1,8;blade;no cortex;unburned;unmod
+4893;28;16;4;1,4;blade;no cortex;unburned;mod
+4893;34;15;5;2,1;blade;no cortex;unburned;mod
+4904;NA;NA;NA;NA;other;NA;NA;mod
+4904;36;17;6;2,9;blade;no cortex;unburned;mod
+4904;29;17;4;2;flake;no cortex;unburned;mod
+4913;34;14;4;1,7;blade;no cortex;unburned;mod
+4925;17;9;5;0,7;other;cortex;unburned;unmod
+4929;27;18;5;1,7;flake;no cortex;unburned;mod
+4950;30;17;2;1,1;flake;no cortex;unburned;unmod
+4953;16;9;4;0,4;flake;no cortex;burned;unmod
+4956;34;18;4;2,2;flake;cortex;unburned;mod
+4956;28;17;2;1,2;flake;no cortex;unburned;mod
+4963;25;18;4;1,4;flake;no cortex;unburned;mod
+4963;26;17;3;1,2;flake;no cortex;unburned;mod
+5156;36;18;6;3,2;blade;no cortex;unburned;unmod
+5156;57;20;8;6,8;blade;no cortex;unburned;unmod
+5156;50;11;4;2,7;blade;no cortex;unburned;unmod
+5156;20;19;4;2,3;blade;no cortex;unburned;mod
+5156;27;20;6;2,8;flake;cortex;unburned;mod
+5156;34;19;6;4;blade;no cortex;burned;unmod
+5156;35;27;9;6,8;flake;cortex;unburned;unmod
+5156;29;25;7;4,8;blade;no cortex;unburned;unmod
+5156;28;15;4;1,7;flake;no cortex;unburned;unmod
+5156;13;12;3;0,6;blade;no cortex;unburned;unmod
+5156;23;5;3;0,3;blade;no cortex;unburned;unmod
+5156;11;8;2;0,1;flake;no cortex;unburned;unmod
+5156;60;16;6;5,9;blade;no cortex;unburned;mod
+5156;34;17;7;4,1;blade;no cortex;unburned;mod
+5160;25;16;4;1,7;flake;no cortex;unburned;unmod
+5170;36;24;6;5,5;flake;cortex;unburned;unmod
+5170;28;14;6;2;other;no cortex;unburned;unmod
+5300;28;18;6;2,5;flake;no cortex;unburned;unmod
+5300;17;15;3;0,6;other;no cortex;burned;unmod
+5413;58;46;17;37,3;flake;cortex;unburned;unmod
+5413;35;18;5;3,4;blade;no cortex;unburned;unmod
+5413;30;13;3;1,7;blade;no cortex;unburned;mod
+5413;20;15;4;0,9;flake;no cortex;unburned;mod
+5413;38;12;3;1,3;blade;no cortex;unburned;unmod
+5413;38;21;4;3,3;flake;no cortex;unburned;mod
+5413;63;27;6;12,5;blade;no cortex;unburned;unmod
+5413;22;13;4;1,2;blade;no cortex;unburned;unmod
+5413;66;23;5;7,3;blade;no cortex;unburned;mod
+5413;58;21;7;10,3;blade;no cortex;unburned;mod
+5602;21;12;6;0,7;other;no cortex;burned;unmod
+5614;24;18;5;2,8;blade;no cortex;unburned;unmod
+5787;10;9;2;0,2;other;no cortex;burned;unmod
+5800;72;19;6;8,9;blade;no cortex;unburned;unmod
+5800;43;26;6;6,9;blade;no cortex;unburned;mod
+5801;46;24;7;7,1;blade;no cortex;unburned;mod
+5801;40;20;4;3,6;blade;no cortex;unburned;unmod
+5825;40;20;3;1,8;flake;no cortex;unburned;mod
+5825;21;15;4;1,3;flake;no cortex;unburned;mod
+5825;24;15;2;0,8;flake;cortex;unburned;mod
+5825;60;20;5;6,4;blade;cortex;unburned;unmod
+5825;46;14;4;2,6;blade;cortex;unburned;unmod
+5857;9;9;2;0,1;flake;no cortex;unburned;unmod
+5912;43;26;6;8,6;blade;no cortex;burned;mod
+5912;28;16;8;3,1;blade;no cortex;unburned;unmod
+5912;34;24;5;4,9;blade;no cortex;unburned;mod
+5912;20;6;4;0,7;flake;cortex;unburned;unmod
+5912;36;17;8;4,3;blade;no cortex;unburned;unmod
+5912;32;17;5;2,9;flake;no cortex;unburned;unmod
+5912;42;21;5;4,4;blade;no cortex;unburned;unmod
+5912;15;11;4;0,7;blade;no cortex;unburned;unmod
+5912;24;14;7;2,6;blade;no cortex;unburned;unmod
+5959;15;12;5;1;blade;no cortex;unburned;unmod
+5960;26;19;6;3,9;blade;cortex;unburned;unmod
+5960;45;27;12;14,9;flake;no cortex;unburned;mod
+5960;29;23;5;4,7;blade;no cortex;unburned;mod
+5960;43;17;4;3,7;blade;no cortex;unburned;unmod
+5960;16;10;6;1;blade;cortex;unburned;unmod
+5960;43;20;7;7,2;blade;cortex;unburned;mod
+5960;29;19;12;6,3;flake;cortex;unburned;mod
+5960;27;25;9;4,4;blade;no cortex;unburned;mod
+5960;19;12;5;1,1;flake;no cortex;unburned;unmod
+5960;59;43;15;36,9;flake;cortex;unburned;mod
+5960;30;29;17;17;other;no cortex;burned;unmod
+5960;28;16;4;1,7;blade;no cortex;unburned;unmod
+5960;19;9;2;0,4;flake;cortex;unburned;unmod
