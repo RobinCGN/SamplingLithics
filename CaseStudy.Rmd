@@ -1,10 +1,11 @@
 ---
 title: Case Study for "SamplingLithics" 
 author: "R. Peters"
-date: "24 April 2020"
+date: "28 April 2020"
 output:
 #  word_document: default
-  html_document: default
+   html_document: default
+#   pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -187,7 +188,7 @@ Now that we have the summary statistics we can calculate the difference in perce
 
 ```{r Function get_run_diff}
 get_run_diff <- function(my_variable){
-  diff_prc <- (diff(my_variable)/(my_variable[-n_batch]/100))
+  diff_prc <- (diff(my_variable)/(my_variable[-1]/100))
   return(diff_prc)
 }
 ```
@@ -239,19 +240,19 @@ Then we will compute the cummulative percentages, for example % of blades in bat
 ```{r percental differences qualitativ}
 # Blades
 blade_prc <- cumsum(t$blade_n)/(cumsum(t$all_n)/100)
-blade_prc_diff <- diff(blade_prc)
+blade_prc_diff <- diff(blade_prc)/(blade_prc[-1]/100)
 
 # Burned
 burned_prc <- cumsum(t$burned_n)/(cumsum(t$all_n)/100)
-burned_prc_diff <- diff(burned_prc)
+burned_prc_diff <- diff(burned_prc)/(burned_prc[-1]/100)
 
 # Cortex
 cortex_prc <- cumsum(t$cortex_n)/(cumsum(t$all_n)/100)
-cortex_prc_diff <- diff(cortex_prc)
+cortex_prc_diff <- diff(cortex_prc)/(cortex_prc[-1]/100)
 
 # Modification
 mod_prc <- cumsum(t$mod_n)/(cumsum(t$all_n)/100)
-mod_prc_diff <- diff(mod_prc)
+mod_prc_diff <- diff(mod_prc)/(mod_prc[-1]/100)
 ```
 
 ## 6. Plotting
@@ -269,14 +270,14 @@ lines(thickness_mean, pch = 3, type="b", lty=5)
 main_title <- paste0("A= ",A," , batches = ", n_batch, ", n = ", A*n_batch,", N = ",nrow(data))
 title(main=paste0("Quantitative Values - Running means\n", main_title))
 legend("topleft", c("length", "weight", "width", "thickness"),
-       pch = c(0,1,2,3),box.lty = 0)
+       pch = c(0,1,2,3),box.lty = 0, cex = 0.75)
 ```
 ```{r Quantitative Values - percentages}
 # Quantitative Values
 xmin <- min(blade_prc, burned_prc, cortex_prc, mod_prc)
 ymin <-max(blade_prc, burned_prc, cortex_prc, mod_prc)
 
-plot(1, type="n", xlim=c(1, n_batch), ylim=c(xmin, ymin), ylab="(mm)", xlab = "Batch No")
+plot(1, type="n", xlim=c(1, n_batch), ylim=c(xmin, ymin), ylab="(%)", xlab = "Batch No")
 lines(blade_prc, pch = 0, type="b", lty=4)
 lines(burned_prc, pch = 1, type="b", lty=3)
 lines(cortex_prc, pch = 2, type="b", lty=2)
@@ -284,7 +285,7 @@ lines(mod_prc, pch = 3, type="b", lty=5)
 main_title <- paste0("A= ",A," , batches = ", n_batch, ", n = ", A*n_batch,", N = ",nrow(data))
 title(main=paste0("Qualitative Values - Running %\n", main_title))
 legend("topleft", c("length", "weight", "width", "thickness"),
-       pch = c(0,1,2,3),box.lty = 0)
+       pch = c(0,1,2,3),box.lty = 0, cex = 0.75)
 ```
 
 ```{r Quantitative Values - differences}
@@ -299,27 +300,29 @@ lines(thickness_diff_prc, pch = 3, type="b", lty=5)
 main_title <- paste0("A= ",A," , batches = ", n_batch, ", n = ", A*n_batch,", N = ",nrow(data))
 title(main=paste0("Quantitative Values - Rolling percentual differences\n", main_title))
 legend("topright", c("length", "weight", "width", "thickness","+/- 5 %"),
-       pch = c(0,1,2,3,15), col=c(rep("black",4),"lightgreen",box.lty = 0))
+       pch = c(0,1,2,3,15), col=c(rep("black",4),"lightgreen"),box.lty = 0, cex = 0.75)
 ```
 
 
 
 ```{r Qualitative Values}
 # Qualitative Values
-plot(1, type="n", xlim=c(1, n_batch-1), ylim=c(-25, 25), ylab="Difference from last Batch (%)", xlab = "Batches", xaxt = 'n')
+plot(1, type="n", xlim=c(1, n_batch-1), ylim=c(-100, 100), ylab="Difference from last Batch (%)", xlab = "Batches", xaxt = 'n')
 axis(1, at = seq(1, n_batch-1), label=paste0("<",seq(2, n_batch)))
-polygon(c(0,n_batch,n_batch,0),c(5,5,-5,-5), col="lightgreen",border = NA)
+polygon(c(0,n_batch,n_batch,0),c(20,20,-20,-20), col="lightgreen",border = NA)
 lines(blade_prc_diff, pch = 0, type="b", lty=4)
 lines(burned_prc_diff, pch = 1, type="b", lty=3)
 lines(cortex_prc_diff, pch = 2, type="b", lty=2)
 lines(mod_prc_diff, pch = 3, type="b", lty=5)
-title(main=paste0("Qualitative Values- Rolling percentual differences\n", main_title))
-legend("topright", c("Blade_prc", "Burned_prc", "Cortex_prc", "Mod_prc","+/- 5 %"),
-       pch = c(0,1,2,3,15), col=c(rep("black",4),"lightgreen"),box.lty = 0)
+title(main=paste0("Qualitative Values - Rolling percentual differences\n", main_title))
+legend("topright", c("Blade_prc", "Burned_prc", "Cortex_prc", "Mod_prc","+/- 20 %"),
+       pch = c(0,1,2,3,15), col=c(rep("black",4),"lightgreen"),box.lty = 0, cex = 0.75)
 ```
-As you can see the running estimates start of very variable and converge as more batches are beeing added. Linstädter et al. define a corridor of +/- 5 percent for numerical and +/-20 percent for percentages. If two times two consecutive values fall within this corridor the optimal sampling size has been reached. This limit as to be defined for every variable on its own.
 
-## 7. Compare Estimates (samples) and overall values (original data se
+As you can see the running estimates start of very variable and converge as more batches are beeing added. Linstädter et al. define a corridor of +/- 5 percent for numerical and +/-20 percent for percentages. Please note that the y-axis are scaled differently.
+If two times two consecutive values fall within this corridor the optimal sampling size has been reached according to Linstädter et al. This limit has to be defined for every variable on its own.
+
+## 7. Compare Estimates (samples) and overall values (original data set)
 
 Last but not least, in this case study we can compare the estimates computed using the routine by **Linstädter/Richter/Linstädter 2002** with the summary statistics of the original data set. Of course in a real world example there wouldn't be a original data set, because we are trying to avoid recording all artificats of an assemblage.
 

@@ -70,6 +70,8 @@ copy.data <- data
 train <- data.frame()
 
 for (i in 1:n_batch){
+  # set seed if you want to draw the same sample again
+  #set.seed(100)
   dt = sort(sample(nrow(copy.data), A))
   train  <- rbind(train , cbind(copy.data[dt,], "Train_Set" = rep(i,A)))
   copy.data<-copy.data[-dt,]
@@ -88,7 +90,7 @@ table(train$Train_Set)
 
 
 
-#---- 4. Get running means of measurements (numeric variables) ----
+#---- 4. Get running means of measurements (quantitative variables) ----
 
 
 # Function get running mean of measurments
@@ -109,10 +111,9 @@ get_run_var <- function(my_variable){
 
 
 get_run_diff <- function(my_variable){
-  diff_prc <- (diff(my_variable)/(my_variable[-n_batch]/100))
+  diff_prc <- (diff(my_variable)/(my_variable[-1]/100))
   return(diff_prc)
 }
-
 
 
 weight_mean <- get_run_var(train$weight)
@@ -158,29 +159,62 @@ t
 
 # Blades
 blade_prc <- cumsum(t$blade_n)/(cumsum(t$all_n)/100)
-blade_prc_diff <- diff(blade_prc)
+blade_prc_diff <- diff(blade_prc)/(blade_prc[-1]/100)
 
 # Burned
 burned_prc <- cumsum(t$burned_n)/(cumsum(t$all_n)/100)
-burned_prc_diff <- diff(burned_prc)
+burned_prc_diff <- diff(burned_prc)/(burned_prc[-1]/100)
 
 # Cortex
 cortex_prc <- cumsum(t$cortex_n)/(cumsum(t$all_n)/100)
-cortex_prc_diff <- diff(cortex_prc)
+cortex_prc_diff <- diff(cortex_prc)/(cortex_prc[-1]/100)
 
 # Modification
 mod_prc <- cumsum(t$mod_n)/(cumsum(t$all_n)/100)
-mod_prc_diff <- diff(mod_prc)
+mod_prc_diff <- diff(mod_prc)/(mod_prc[-1]/100)
 
 
 
 #-- 6. Plotting ----
 
 
-# Quantitative Values
+# Running means
+par(mfrow=c(1,2))
+xmin <- min(length_mean, weight_mean, width_mean, thickness_mean)
+ymin <-max(length_mean, weight_mean, width_mean, thickness_mean)
+
+plot(1, type="n", xlim=c(1, n_batch), ylim=c(xmin, ymin), ylab="(mm)", xlab = "Batch No")
+lines(length_mean, pch = 0, type="b", lty=4)
+lines(weight_mean, pch = 1, type="b", lty=3)
+lines(width_mean, pch = 2, type="b", lty=2)
+lines(thickness_mean, pch = 3, type="b", lty=5)
+main_title <- paste0("A= ",A," , batches = ", n_batch, ", n = ", A*n_batch,", N = ",nrow(data))
+title(main=paste0("Quantitative Values - Running means\n", main_title))
+legend("topleft", c("length", "weight", "width", "thickness"),
+       pch = c(0,1,2,3),box.lty = 0, cex = 0.75)
+
+
+# Running  %
+xmin <- min(blade_prc, burned_prc, cortex_prc, mod_prc)
+ymin <-max(blade_prc, burned_prc, cortex_prc, mod_prc)
+
+plot(1, type="n", xlim=c(1, n_batch), ylim=c(xmin, ymin), ylab="(mm)", xlab = "Batch No")
+lines(blade_prc, pch = 0, type="b", lty=4)
+lines(burned_prc, pch = 1, type="b", lty=3)
+lines(cortex_prc, pch = 2, type="b", lty=2)
+lines(mod_prc, pch = 3, type="b", lty=5)
+main_title <- paste0("A= ",A," , batches = ", n_batch, ", n = ", A*n_batch,", N = ",nrow(data))
+title(main=paste0("Qualitative Values - Running %\n", main_title))
+legend("topleft", c("blade_prc", "burned_prc", "cortex_prc", "mod_prc"),
+       pch = c(0,1,2,3),box.lty = 0, cex = 0.75)
+
+
+
+
+# Quantitative Values - Difference from last Batch (%)
 par(mfrow=c(1,2))
 plot(1, type="n", xlim=c(1, n_batch-1), ylim=c(-25, 25), ylab="Difference from last Batch (%)", xlab = "Batch No", xaxt = 'n')
-axis(1, at = seq(1, n_batch-1), label=seq(2, n_batch))
+axis(1, at = seq(1, n_batch-1), label=paste0("<",seq(2, n_batch)))
 polygon(c(0,n_batch,n_batch,0),c(5,5,-5,-5), col="lightgreen",border = NA)
 lines(length_diff_prc, pch = 0, type="b", lty=4)
 lines(weight_diff_prc, pch = 1, type="b", lty=3)
@@ -189,27 +223,23 @@ lines(thickness_diff_prc, pch = 3, type="b", lty=5)
 main_title <- paste0("Artef.= ",A," , batches = ", n_batch, ", n = ", A*n_batch,", N = ",nrow(data))
 title(main=paste0("Quantitative Values\n", main_title))
 legend("topright", c("length", "weight", "width", "thickness","+/- 5 %"),
-       pch = c(0,1,2,3,15), col=c(rep("black",4),"lightgreen"),box.lty = 0)
+       pch = c(0,1,2,3,15), col=c(rep("black",4),"lightgreen"),box.lty = 0, cex = 0.75)
 
 
 
 
 
-# Qualitative Values
-plot(1, type="n", xlim=c(1, n_batch-1), ylim=c(-25, 25), ylab="Difference from last Batch (%)", xlab = "Batch No", xaxt = 'n')
-axis(1, at = seq(1, n_batch-1), label=seq(2, n_batch))
-polygon(c(0,n_batch,n_batch,0),c(5,5,-5,-5), col="lightgreen",border = NA)
+# Qualitative Values - Difference from last Batch (%)
+plot(1, type="n", xlim=c(1, n_batch-1), ylim=c(-100, 100), ylab="Difference from last Batch (%)", xlab = "Batch No", xaxt = 'n')
+axis(1, at = seq(1, n_batch-1), label=paste0("<",seq(2, n_batch)))
+polygon(c(0,n_batch,n_batch,0),c(20,20,-20,-20), col="lightgreen",border = NA)
 lines(blade_prc_diff, pch = 0, type="b", lty=4)
 lines(burned_prc_diff, pch = 1, type="b", lty=3)
 lines(cortex_prc_diff, pch = 2, type="b", lty=2)
 lines(mod_prc_diff, pch = 3, type="b", lty=5)
-#text(n_batch-1,blade_prc_diff[n_batch-1], paste(round(blade_prc[n_batch-1],1),"%") ,pos = 3)
-#text(n_batch-1,burned_prc_diff[n_batch-1], paste(round(burned_prc[n_batch-1],1),"%") ,pos = 3)
-#text(n_batch-1,cortex_prc_diff[n_batch-1], paste(round(cortex_prc[n_batch-1],1),"%") ,pos = 3)
-text(n_batch-1,mod_prc_diff[n_batch-1], paste(round(mod_prc[n_batch-1],1),"%") ,pos = 3)
 title(main=paste0("Qualitative Values\n", main_title))
-legend("topright", c("Blade_prc", "Burned_prc", "Cortex_prc", "Mod_prc","+/- 5 %"),
-       pch = c(0,1,2,3,15), col=c(rep("black",4),"lightgreen"),box.lty = 0)
+legend("topright", c("Blade_prc", "Burned_prc", "Cortex_prc", "Mod_prc","+/- 20 %"),
+       pch = c(0,1,2,3,15), col=c(rep("black",4),"lightgreen"),box.lty = 0, cex = 0.75)
 
 
 
@@ -273,4 +303,7 @@ results <- data.frame(A = rep(A, 4), n_batch = rep(n_batch,4),
 results <- cbind(results, qual_diff_prc = round(results$qual_real-results$qual_estimates,1))
 results <- cbind(results, quant_diff_prc = round((results$quant_estimates-results$quant_real)/(results$quant_real/100),1))
 
-results
+print(results, row.names = F)
+
+#barplot(results$qual_diff_prc, ylim=c(-15,15), ylab="%")
+#barplot(results$quant_diff_prc, ylim=c(-15,15), ylab="%")
