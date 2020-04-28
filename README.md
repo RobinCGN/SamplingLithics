@@ -1,2 +1,8 @@
 # SamplingLithics
  Using Running Averages for Optimal Sampling/Data Recording of Lithic Artefacts based on EasyGilf (Linstädter et al 2002)
+
+Archaeologist often face the problem of recording hugh assemblages, for instance of stone artefacts. **SamplingLithics** aims at optimal recording  lithic data sets with minimal time investment. It is an implementation of the EasyGilf work routine in R, and credit for inventing the method - originally a MS Access database - belong to the EasyGilf team (Jörg Linstädter, Jürgen Richter, Anja Linstäder, Insitute for Prehistoric Archaelogy, University of Cologne). Please refer to their publication for further information (*Lindstädter/Richter/Lindstädter 2002*).
+
+The goal of **SamplingLithics** is to record quanitativ (mean, median of measurements) and qualitative (percentages) of lithic attributes in a time saving way without reducing validity. The workflow aims at finding a representative sample by calculating running/rolling summary statistics of certain attributes. Already during the phase of data recording one should start with analysing small randomly choosen batches of artefacts. Every new sample is added to the preciding group of batches until the estimates converge. As soons as the estimates of the current batch and the batches before are identical, one can stop recording and the optimal sample size is reached. Put in another way, **SamplingLithics** or EasyGilf are not about a certain sampling strategy but solely concerned with the sampling intensity or the question "How many artefacts do i have to look at to get solid summary statistics of my attributes?". 
+
+**Please read the CaseStudy.Rmd or CaseStudy.pdf file!**
