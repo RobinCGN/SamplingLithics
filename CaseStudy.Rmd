@@ -59,7 +59,7 @@ For this exemplary application, we use a data set of neolithic stone tools - mos
 
 #-- 1. Import Data ----
 
-data <- read.csv2("/home/Programmieren/R/SamplingLithics/data/data.csv")
+data <- read.csv2("data/data.csv")
 
 head(data)
 
@@ -115,7 +115,11 @@ table(data$type)
 
 ## 3. Define Sampling Variables and Draw Samples
 
-Now we have to define the number of batches/training sets `n_batch` and the number of artefacty per batch `A`. Both values depend on your data set, especially the variability of your attirutes and it is advisable to explore these values by running the process several times. Oviously `n_batch` * ´A´ has to be smaller than ´nrow(data)´. As a starting point we will beginn with **20** batches containing **5** artefacts totalling to **100** objects, circa **1/5** of the overall data set.
+Now we have to define the number of batches/training sets `n_batch` and the number of artefacty per batch `A`. Both values depend on your data set, especially the variability of your attirutes and it is advisable to explore these values by running the process several times. Oviously `n_batch` * ´A´ has to be smaller than ´nrow(data)´.
+
+In a real world example one wouldn't draw a sample from a data set but decide on the numer of batches and the number of artefacts beforehand or add batches during find recording.
+
+As a starting point we will beginn with **20** batches containing **5** artefacts totalling to **100** objects, circa **1/5** of the overall data set.
 
 ```{r defining variables}
 # Define nummber of batches/training sets (n_batch) and number of artefacts per batch (A)
